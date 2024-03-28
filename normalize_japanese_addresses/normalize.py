@@ -25,7 +25,7 @@ DEFAULT_ENDPOINT = "https://geolonia.github.io/japanese-addresses/api/ja"
 DEFAULT_LEVEL = 3
 
 
-def normalize(address: str, **kwargs) -> str:
+def normalize(address: str, **kwargs) -> dict[str, str | float | int]:
     """
     住所正規化
     :param address: 住所
